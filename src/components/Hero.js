@@ -6,7 +6,7 @@ import SocialLinks from "../constants/socialLinks"
 
 const query = graphql`
   {
-    file(relativePath: { eq: "JesperZ.jpg" }) {
+    file(relativePath: { eq: "hero3.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -33,6 +33,9 @@ const Hero = () => {
             <h4>Full Stack JavaScript Developer</h4>
             <Link to="/projects" className="btn">
               Projects
+            </Link>
+            <Link style={{ marginLeft: "10px" }} to="/contact" className="btn">
+              Contact
             </Link>
             <SocialLinks />
           </div>
