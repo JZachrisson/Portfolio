@@ -23,7 +23,7 @@ Variables
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
   --clr-primary-8: hsl(184, 80%, 74%);
-  --clr-primary-9: hsl(185, 94%, 87%);
+  --clr-primary-9: black;
   --clr-primary-10: hsl(186, 100%, 94%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
@@ -63,7 +63,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
+  background: black;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -190,7 +190,7 @@ p {
 /* social links */
 .social-links {
   margin-top: 2rem;
-  width: 15rem;
+  width: 5rem;
   display: flex;
 }
 
@@ -224,8 +224,8 @@ Navbar
   display: flex;
   align-items: center;
   z-index: 200;
-  background: black;
-  color: var(--clr-primary-5);
+  background-color: black;
+  color: white;
 }
 .nav-center {
   width: 90vw;
@@ -240,6 +240,12 @@ Navbar
 .nav-header img {
   margin-bottom: 0.375rem;
 }
+
+.nav-name {
+  font-size: 25px;
+  font-weight: 800;
+}
+
 .toggle-btn {
   font-size: 2rem;
   background: transparent;
@@ -329,6 +335,15 @@ Sidebar
 .sidebar-links li a:hover {
   background: var(--clr-primary-9);
   color: var(--clr-primary-5);
+}
+
+.social-links.sidebar-icons {
+  margin-left: 30px;
+  width: 5rem;
+}
+
+.side-container .social-link {
+  color: black;
 }
 .close-btn {
   position: absolute;
@@ -865,6 +880,12 @@ Footer
 }
 .footer .social-link:hover {
   color: var(--clr-primary-5);
+}
+
+.footer-container {
+  align-items: center;
+  /* margin: 0 auto;
+  background-color: red; */
 }
 /*
 ===============

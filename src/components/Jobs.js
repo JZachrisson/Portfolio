@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 
 const query = graphql`
   {
-    allStrapiJobs(sort: { fields: strapiId, order: DESC }) {
+    allStrapiJobs(sort: { fields: strapiId, order: ASC }) {
       nodes {
         strapiId
         company
@@ -60,9 +60,9 @@ const Jobs = () => {
           })}
         </article>
       </div>
-      <Link to="/about" className="btn center-btn">
+      {/* <Link to="/about" className="btn center-btn">
         More info
-      </Link>
+      </Link> */}
     </section>
   )
 }
