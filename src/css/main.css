@@ -130,7 +130,7 @@ p {
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  color: white;
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -216,7 +216,7 @@ Navbar
 */
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -226,7 +226,14 @@ Navbar
   z-index: 200;
   background-color: black;
   color: white;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 }
+
+.nav__black {
+  background-color: #222;
+}
+
 .nav-center {
   width: 90vw;
   max-width: 1170px;
@@ -244,6 +251,14 @@ Navbar
 .nav-name {
   font-size: 25px;
   font-weight: 800;
+}
+
+.nav-name-link {
+  color: white;
+}
+
+.nav-name-link:hover {
+  color: var(--clr-primary-5);
 }
 
 .toggle-btn {
@@ -293,6 +308,9 @@ Navbar
 @media screen and (min-width: 992px) {
   .navbar {
     background: transparent;
+  }
+  .nav__black {
+    background-color: #111;
   }
 }
 /*
@@ -537,7 +555,7 @@ Services
   transition: var(--transition);
 }
 .service:hover {
-  background: var(--clr-primary-5);
+  background: var(--clr-grey-10);
   color: var(--clr-primary-9);
 }
 .service:hover p {
@@ -704,7 +722,7 @@ Projects
   font-size: 1.5rem;
 }
 .project-desc {
-  word-spacing: 15px;
+  word-spacing: 3px;
   color: var(--clr-grey-3);
 }
 .project-stack {
@@ -858,7 +876,7 @@ Footer
 */
 .footer {
   height: 9rem;
-  background: #222;
+  background: #111;
   text-align: center;
   display: grid;
   place-items: center;

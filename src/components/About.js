@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import { graphql, useStaticQuery } from "gatsby"
 import Title from "../components/Title"
@@ -47,6 +48,9 @@ const About = () => {
               return <span key={item.id}>{item.title}</span>
             })}
           </div>
+          <Link style={{ marginTop: "50px" }} to="/about" className="btn">
+            Learn More
+          </Link>
         </article>
       </div>
     </section>

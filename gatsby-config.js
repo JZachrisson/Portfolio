@@ -9,7 +9,7 @@ module.exports = {
     title: "Jesper Zachrisson's Portfolio",
     description: "This is Jesper Zachrisson's Portfolio Site",
     author: "@jesperzachrisson",
-    image: "/twitter-img.png",
+    image: "/hero-img.png",
     siteUrl: "https://jesperzachrisson.netlify.app",
   },
   plugins: [
